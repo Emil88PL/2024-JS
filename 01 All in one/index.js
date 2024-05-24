@@ -1125,27 +1125,66 @@
 
 
 
-const dates = ["2024-1-10", "2025-3-12", "2026-7-24"];
-const newDates = dates.map(formatDates);
+// const dates = ["2024-1-10", "2025-3-12", "2026-7-24"];
+// const newDates = dates.map(formatDates);
 
-console.log(newDates);
+// console.log(newDates);
 
-function formatDates(element) {
-    const parts = element.split("-");
-    return `${parts[2]}/${parts[1]}/${parts[0]}`;
+// function formatDates(element) {
+//     const parts = element.split("-");
+//     return `${parts[2]}/${parts[1]}/${parts[0]}`;
+// }
+
+
+// .filter() = creates a new array by filtering out elements 
+
+// let numbers = [1, 2, 3, 4, 5, 6, 7];
+// let evenNums = numbers.filter(isEven);
+// let oddNums = numbers.filter(isOdd);
+
+// console.log(evenNums);
+// console.log(oddNums);
+
+// function isEven(element) {
+//     return element % 2 === 0;
+// }
+
+// function isOdd(element) {
+//     return element % 2 !== 0;
+// }
+
+
+// const ages = [16, 17, 18, 20, 69];
+// const adults = ages.filter(isAdult);
+// const child = ages.filter(isChild);
+
+// console.log(adults);
+// console.log(child);
+
+// function isAdult(element) {
+//     return element >= 18;
+// }
+
+
+// function isChild(element) {
+//     return element < 18;
+// }
+
+
+const words = ["apple", "orange", "bananum", "kiwi", "coconuts"];
+const shortWords = words.filter(getShortWords);
+const longWords = words.filter(getLongWords);
+
+console.log(shortWords);
+console.log(longWords);
+
+function getShortWords(element) {
+    return element.length <= 6;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+function getLongWords(element) {
+    return element.length > 6;
+}
 
 
 
