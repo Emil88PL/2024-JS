@@ -1064,11 +1064,16 @@
 let fruits = ["apple", "orange", "banana"];
 
 
-fruits.forEach(fruitsToUpperCase);
+// fruits.forEach(fruitsToUpperCase);
+fruits.forEach(capitalizeFirstLetter);
 fruits.forEach(displayInConsole);
                     // need to be in that order! 
 function fruitsToUpperCase(element, index, array) {
     array[index] = element.toUpperCase();
+}
+
+function capitalizeFirstLetter(element, index, array) {
+    array[index] = element.charAt(0).toUpperCase() + element.slice(1);
 }
 
 
