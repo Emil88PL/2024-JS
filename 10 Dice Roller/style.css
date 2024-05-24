@@ -1,0 +1,36 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(136, 175, 244);
+    font-size: 2em; /* 2em means 200% */
+    text-align: center;
+}
+
+button {
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 11px;
+    border: none;
+    background-color: cornflowerblue;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blue;
+}
+
+button:active {
+    background-color: black;
+}
+
+input {
+    font-size: 2rem;
+    width: 150px;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+

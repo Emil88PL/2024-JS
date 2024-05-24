@@ -1,0 +1,51 @@
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(136, 175, 244);
+    font-size: 2em; /* 2em means 200% */
+    text-align: center;
+}
+
+#mySubmitBtn {
+    font-size: 1em; 
+    padding: 5px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#mySubmitBtn:hover {
+    background-color: rgb(173, 173, 223);
+    box-shadow: 2px 2px 2px rgba(15, 15, 141, 0.724);
+}
+
+#myLabel {
+    font-size: 2.5em;
+}
+
+form {
+    background-color: rgb(176, 211, 187);
+    max-width: 70%;
+    margin: auto;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 12px rgb(30, 57, 166);
+}
+
+#textBox {
+    width: 50%;
+    text-align: center;
+    font-size: 2em;
+    border: 2px solid rgba(53, 50, 215, 0.883);
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+label {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#result {
+    font-size: 1.2em;
+    font-weight: bold;
+}
