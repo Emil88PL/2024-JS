@@ -1171,33 +1171,49 @@
 // }
 
 
-const words = ["apple", "orange", "bananum", "kiwi", "coconuts"];
-const shortWords = words.filter(getShortWords);
-const longWords = words.filter(getLongWords);
+// const words = ["apple", "orange", "bananum", "kiwi", "coconuts"];
+// const shortWords = words.filter(getShortWords);
+// const longWords = words.filter(getLongWords);
 
-console.log(shortWords);
-console.log(longWords);
+// console.log(shortWords);
+// console.log(longWords);
 
-function getShortWords(element) {
-    return element.length <= 6;
+// function getShortWords(element) {
+//     return element.length <= 6;
+// }
+
+// function getLongWords(element) {
+//     return element.length > 6;
+// }
+
+
+// .reduce() = reduce the elements of an array array to a sigle value
+
+
+// const prices = [5, 30, 25, 10, 20];
+// const total = prices.reduce(sum);
+
+// console.log(`total is £${total.toFixed(2)}`);
+
+// //        previous element, next element
+// function sum(accumulator, element) {
+//     return accumulator + element;
+// }
+
+const grades = [75, 30, 23, 90, 62, 123, 42];
+const maxGrades = grades.reduce(getMax);
+const minGrades = grades.reduce(getMin);
+
+console.log(maxGrades);
+console.log(minGrades);
+
+function getMax(previous, next) {
+    return Math.max(previous, next) 
 }
 
-function getLongWords(element) {
-    return element.length > 6;
+function getMin(previous, next) {
+    return Math.min(previous, next) 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
