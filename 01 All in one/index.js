@@ -58,7 +58,7 @@
 
 
 // console.log(students);
- 
+
 /**
  * Operator precedence
  * 1. parentheses (brackets)
@@ -191,7 +191,7 @@
 
 // const min = 1;
 // const max = 6;
-                       
+
 // const myButton = document.getElementById('myButton');
 // const myLabel = document.getElementById('myLabel');
 
@@ -366,7 +366,7 @@
 // phoneNumber = phoneNumber.padEnd(25, "0");
 // console.log(phoneNumber);
 
- 
+
 
 
 
@@ -544,7 +544,7 @@
 // console.log(`You are looking for ${number}`);
 
 // while(!isCorrect) {
-    
+
 //     let guess = window.prompt(`Guess Number from ${min} to ${max} (q to quit)`)
 
 //     if(guess < min || guess > max) {
@@ -559,7 +559,7 @@
 //         attempts++;
 //         window.alert(`Too big! Try again`);
 //     } 
-    
+
 //     if(guess == "q") {
 //         break;
 //     }
@@ -576,7 +576,7 @@
 // let age = 42;
 //             // parameters
 // function happyTo(string, age) {
- 
+
 //     return `Happy birthday, ${string} you are just ${age} years old`;
 // }
 //             // arguments
@@ -679,7 +679,7 @@
 // let temp;
 
 // function convert() {
-    
+
 //     if(toFahrenheit.checked) {
 //         console.log(`To F checked`);
 //         temp = Number(textBox.value);
@@ -747,9 +747,9 @@
 
 // spread operator = ... allows an iterable such as an array or string to be expanded into 
 //                  separate elements (unpacking the elements)
-    // unpack elements
-    // opening a box
-    // spread the array to different elements
+// unpack elements
+// opening a box
+// spread the array to different elements
 // let numbers = [1, 2, 3, 4, 5];
 // let maximum = Math.max(...numbers);
 // let minimum = Math.min(...numbers);
@@ -802,7 +802,7 @@
 
 //ex2
 // function sum(...numbers) {
-    
+
 //     let result = 0;
 //     for(let number of numbers) {
 //         result += number
@@ -815,7 +815,7 @@
 
 
 // function getAverage(...numbers) {
-    
+
 //     let result = 0;
 //     for(let number of numbers) {
 //         result += number;
@@ -882,7 +882,7 @@
 //         allowedChars += includesUpperCas ? uppercaseChars : "";
 //         allowedChars += includeNumbers ? numbersChars : "";
 //         allowedChars += includeSymbols ? symbolsChars : "";                   
-                            
+
 //         // console.log(allowedChars);     
 //         if(passwordLength <= 6) {
 //             return `(Password length must be at least 6 characters)`
@@ -890,7 +890,7 @@
 //         if(allowedChars.length === 0) {
 //             return `(At least one set of characters must be selected)`
 //         }     
-        
+
 //         for(var i = 0; i < passwordLength; i++) {
 //             const randomIndex = Math.floor(Math.random() * allowedChars.length);
 //             password += allowedChars[randomIndex];
@@ -927,7 +927,7 @@
 
 // hello();
 // goodBye();
- 
+
 // function hello() {
 //     setTimeout(function () {
 //         console.log("Hello!");
@@ -1200,27 +1200,99 @@
 //     return accumulator + element;
 // }
 
-const grades = [75, 30, 23, 90, 62, 123, 42];
-const maxGrades = grades.reduce(getMax);
-const minGrades = grades.reduce(getMin);
+// const grades = [75, 30, 23, 90, 62, 123, 42];
+// const maxGrades = grades.reduce(getMax);
+// const minGrades = grades.reduce(getMin);
 
-console.log(maxGrades);
-console.log(minGrades);
+// console.log(maxGrades);
+// console.log(minGrades);
 
-function getMax(previous, next) {
-    return Math.max(previous, next) 
-}
+// function getMax(previous, next) {
+//     return Math.max(previous, next)
+// }
 
-function getMin(previous, next) {
-    return Math.min(previous, next) 
-}
-
-
+// function getMin(previous, next) {
+//     return Math.min(previous, next)
+// }
 
 
 
 
 
+
+
+
+
+
+
+// Function declaration = define a reusable block of code that persforms a specific task
+
+// function hello() {
+//     console.log("hello");
+// }
+
+// hello();
+
+// // function expressions = a way to define functions as values or variables
+// // Used in
+// // 1. Callbacks in asynchronous operations
+// // 2. High-Order functions
+// // 3. Closures
+// // 4. Event listeners 
+
+// const hello2 = function () {
+//     console.log("hello from function expression!");
+// }
+
+// hello2();
+
+// setTimeout(hello, 2000);
+
+// setTimeout(function () {
+//     console.log("Hello?");
+// }, 3000)
+
+
+
+// 1 Declaration
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map(square);
+
+// console.log(squares);
+
+// function square(element) {
+//     return Math.pow(element, 2);
+// }
+
+// 2 expression
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map(function(element) {
+//     return Math.pow(element, 2);
+// });
+
+//                         // we don't need the name `cube`
+// const cubes = numbers.map(function cube(element) {
+//     return Math.pow(element, 3);
+// });
+
+// const evenNums = numbers.filter(function(element) {
+//     return element % 2 === 0;
+// });
+
+// const oddNums = numbers.filter(function(element) {
+//     return element % 2 !== 0;
+// });
+
+//                                  // accumulator, element
+// const sumOfArray = numbers.reduce(function(prev, next) {
+//     return prev + next;
+// })
+
+// console.log(squares);
+// console.log(cubes);
+// console.log(evenNums);
+// console.log(oddNums);
+// console.log(sumOfArray);
 
 
 
