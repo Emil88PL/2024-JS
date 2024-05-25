@@ -1990,6 +1990,81 @@
 // }
 
 
+// Array of Objects  
+
+// const fruits = [{name: "apple", color: "red", calories: 94}, 
+//                 {name: "orange", color: "oarange", calories: 45}, 
+//                 {name: "banana", color: "yellow", calories: 105}, 
+//                 {name: "coconut", color: "white", calories: 159}, 
+//                 {name: "pineapple", color: "yellow", calories: 37}];
+
+
+// // console.log(fruits[0].name);
+// // console.log(fruits[1].name);
+// // console.log(fruits[2].name);
+// // console.log(fruits[3].name);
+// // console.log(fruits[4].name);
+
+// // console.log(fruits[0].calories);
+// // console.log(fruits[1].calories);
+// // console.log(fruits[2].calories);
+// // console.log(fruits[3].calories);
+// // console.log(fruits[4].calories);
+
+// // add to array (last)
+// fruits.push({name: "grapes", color: "purple", calories: 62})
+
+// // delete last one in array
+// // fruits.pop();
+
+// // console.log(fruits);
+
+// // for(const x in fruits) {
+// //     console.log(fruits[x].name);
+// // }
+
+// // you can splice // cut out
+// // fruits.splice(0,1);
+
+// // for(const x in fruits) {
+// //     console.log("x: " + fruits[x].name);
+// // }
+// // console.log(fruits);
+// // ------------ForEach with arrow function----------------
+// // fruits.forEach(x => console.log(x.name));
+// // fruits.forEach(x => console.log(x.color));
+// // ------------map() ------------------------------------
+// // const fruitsName = fruits.map(fruit => fruit.name);
+// // const fruitsColors = fruits.map(fruit => fruit.color);
+// // console.log(fruitsName)
+// // console.log(fruitsColors)
+// // ------------filter()-----------------------------------
+// // const yellowFruits = fruits.filter(fruit => fruit.color === "yellow");
+// // console.log(yellowFruits);
+// // const lowCaloriesFruits = fruits.filter(x => x.calories < 100);
+// // console.log(lowCaloriesFruits);
+// // -------------reduce()--------------------------------
+//                     // acumulator, element
+// // const maxCal = fruits.reduce((max, fruit) => 
+// //                             fruit.calories > max.calories ?
+// //                             fruit : max);
+// // console.log(maxCal);
+// // console.log(maxCal.calories);
+
+// const minCal = fruits.reduce((min, fruit) =>
+//                               fruit.calories < min.calories ?
+//                               fruit : min);
+// console.log(minCal);
+
+
+
+
+
+
+
+
+
+
 
 
 
