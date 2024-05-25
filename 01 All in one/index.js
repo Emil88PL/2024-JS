@@ -1711,6 +1711,126 @@
 // strk1.fly();
 
 
+// getter = special method that makes property readable
+// setter = special method that makes property writeable
+
+// validate and modify a value when reading/writing a property
+
+//ex 1
+// class Rectangle {
+//     constructor(width, hight) {
+//         this.width = width;
+//         this.hight = hight;
+//     }
+
+//     set width(newWidth) {
+//         if(newWidth > 0) {
+//             this._width = newWidth; // (_ private property - not touching)
+//         } else {
+//             console.error("Width must be a positive number");
+//         }
+//     }
+
+//     set hight(newHeight) {
+//         if(newHeight > 0) {
+//             this._height = newHeight;
+//         } else {
+//             console.error("Height must be a positive number");
+//         }
+//     }
+
+//     get width() {
+//         return `${this._width.toFixed(1)} cm`; // _ private witdth
+//     }
+
+//     get hight() {
+//         return `${this._height.toFixed(1)} cm`;
+//     }
+
+//     get area() {
+//         return `${(this._width * this._height).toFixed(1)} cm^2`;
+//     }
+// }
+
+
+// const rectAngle = new Rectangle(10000, 20);
+
+// console.log(rectAngle.width);
+// console.log(rectAngle.hight);
+
+// rectAngle.width = 3;
+// rectAngle.hight = 7;
+
+// console.log(rectAngle.width);
+// console.log(rectAngle.hight);
+
+// console.log(`The area of rectangle width ${rectAngle.width} and height ${rectAngle.hight} is ${rectAngle.area}`);
+
+// ex2
+
+// class Person {
+
+//     constructor(firstName, lastName, age) {
+//         this.firstName = firstName;
+//         this.lastName = lastName;
+//         this.age = age;
+//     }
+
+//     set firstName(newFirstName) {
+//         if(typeof newFirstName === "string" && newFirstName.length > 0) {
+//             this._firstName = newFirstName;
+//         } else {
+//             console.error("First name must be a non-empty, string");
+//         }
+//     }
+
+//     set lastName(newlastName) {
+//         if(typeof newlastName === "string" && newlastName.length > 0) {
+//             this._lastName = newlastName;
+//         } else {
+//             console.error("Last name must be a non-empty, string");
+//         }
+//     }
+
+//     set age(newAge) {
+//         if(typeof newAge === "number" && newAge > 0) {
+//             this._age = newAge; 
+//         } else {
+//             console.error("Age must be a non-negative number");
+//         }
+//     }
+
+//     get toString() {
+//         return `Tham man is ${this._lastName}, ${this._firstName} ${this._lastName} and he is ${this._age} years old`
+//     }
+    
+//     // at this point all are undefind we need getters
+
+//     get lastName() {
+//         return this._lastName;
+//     }
+
+//     get firstName() {
+//         return this._firstName
+//     }
+
+//     get age() {
+//         return this._age;
+//     }
+
+//     get fullName() {
+//         return `${this._firstName} ${this._lastName}`;
+//     }
+// }
+
+// const person = new Person("James", "Bond", 98);
+// console.log(person.toString);
+
+// console.log(person.firstName);
+// console.log(person.lastName);
+// console.log(person.age);
+// console.log(person.fullName);
+
 
 
 
