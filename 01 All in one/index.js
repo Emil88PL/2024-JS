@@ -1559,15 +1559,74 @@
 
 
 
+// inheritance = allows a new class to inherit properties and methods 
+//               from an existing class (parent -> child)
+//               helps with code reusability (DRY)
 
 
+// class Animal {
+//     alive = true;
+
+//     eat() {
+//         console.log(`This ${this.name} is eating`)
+//     }
+
+//     sleep() {
+//         console.log(`This ${this.name} is sleeping`)
+//     }
+// }
+
+// class Rabbit extends Animal {
+//     name = "White Rabbit";
+
+//     run() {
+//         console.log(`This ${this.name} is running`)
+//     }
+// }
+
+// class Fish extends Animal {
+//     name = "Nemo";
+
+//     swim() {
+//         if(Animal.alive){
+//             console.log(`This ${this.name} is swimming`)
+//         } else {
+//             console.log(`${this.name} can't sweam, because is dead!`)
+//         }
+//     }
+// }
+
+// class Howk extends Animal {
+//     constructor(name) {
+//         super();
+//         this.name = name;
+//     }
+
+//     fly() {
+//         console.log(`This ${this.name} is flying`)
+//     }
+// }
 
 
+// const rabbit1 = new Rabbit();
+// rabbit1.eat();
+// console.log(rabbit1.name);
+// rabbit1.run();
 
 
+// const fish1 = new Fish();
+// fish1.sleep();
+// fish1.alive = false;
+// fish1.swim();
 
+// const howk1 = new Howk("Howke");
+// howk1.eat();
+// howk1.sleep();
+// setTimeout(() => howk1.fly(), 3000);
 
-
+// console.log(`Rabbit is alive: ${rabbit1.alive}`)
+// console.log(`Rabbit is alive: ${fish1.alive}`)
+// console.log(`Rabbit is alive: ${howk1.alive}`)
 
 
 
