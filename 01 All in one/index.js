@@ -1442,21 +1442,61 @@
 // car2.drive();
 
 
+// class = (E6 feature) provides a more structured and cleaner way to work with objects
+//         compared to traditional constructor functions 
+//         ex. static keyword, encapsulation, inheritance
 
 
+// 1
+// function Product(name, price) {
+    
+//     this.name = name;
+//     this.price = price;
+
+//     this.displayProduct = function () {
+//         console.log(`Product name: ${this.name}`);
+//         console.log(`Price: ${this.price}`)
+//     };
+
+//     this.calculateTotal = function (salesTax) {
+//         return this.price + (this.price * salesTax);
+//     }
+// }
+
+// const salesTax = 0.05;
+
+// const product1 = new Product("Hat", 2.99);
+
+// product1.displayProduct();
+// const withTax = product1.calculateTotal(salesTax);
+// console.log(`Total price is ${withTax.toFixed(2)}`);
+
+// 2 correct class:
+
+// class Product {
+//     constructor(name, price) {
+//         this.name = name;
+//         this.price = price;
+//     }
+
+//     displayProduct() {
+//         console.log(`Product name: ${this.name}`);
+//         console.log(`Price: ${this.price}`);
+//     }
+
+//     calculateTotatl(salesTax) {
+//         return this.price + (this.price * salesTax);
+//     }
+// }
+
+// const salesTax = 0.05; // 5%
+// const product2 = new Product("Headphones", 22.99)
+
+// product2.displayProduct();
+// const totalWithTax = product2.calculateTotatl(salesTax);
 
 
-
-
-
-
-
-
-
-
-
-
-
+// setTimeout(() => console.log(totalWithTax.toFixed(2)), 3000);
 
 
 
