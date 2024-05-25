@@ -1295,21 +1295,64 @@
 // console.log(sumOfArray);
 
 
+// arrow functions = a concise way to write function expressions good for simple functions
+//                   that you use only once 
+//                   (parameters) => some code
+
+// 1 Declaration
+// function hello1() {
+//     console.log("Helllo from declaration");
+// }
+// hello1();
+
+// // 2 Expression
+// const hello2 = function() {
+//     console.log("Hello from expression");
+// }
+// hello2();
+
+// // 3 Arrow function
+// const hello3 = () => console.log("Hello from arrow function");
+// hello3();
 
 
+// // 3 with parameter
+// const helloUser = (name) => console.log(`Hello ${name}`);
+// helloUser("Emil");
+
+// const helloUser2 = (name, age) => {console.log(`Hello ${name}`)
+//                               console.log(`You are ${age} years old!`)
+// };
+// helloUser2("Emil", 35);
+
+// // 1
+// setTimeout(hello4, 1000);
+
+// function hello4() {
+//     console.log("hello4 declaration");
+// }
+
+// // 2
+// setTimeout(function hello4() {
+//     console.log("hello4 expression");
+// }, 2000);
+
+// // 3
+// setTimeout(() => console.log("hello4 arrow function"), 3000);
 
 
-
-
-
-
-
-
-
-
-
-
-
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const squares = numbers.map((element) => Math.pow(element, 2));
+// const cubes = numbers.map((element) => Math.pow(element, 3));
+// const isEven = numbers.filter((element) => element % 2 === 0);
+// const isOdd = numbers.filter((element) => element % 2 !== 0);
+//                                // acumulator, element
+// const sumOfArrowArray = numbers.reduce((priv, next) => priv + next);
+// console.log(squares);
+// console.log(cubes);
+// console.log(isEven);
+// console.log(isOdd);
+// console.log(sumOfArrowArray);
 
 
 
