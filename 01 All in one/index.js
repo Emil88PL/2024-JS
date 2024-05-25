@@ -1392,3 +1392,80 @@
 // console.log(person2.firstName);
 // person2.sayHello();
 // setTimeout(person2.sayBay, 3000);
+
+
+
+
+// this = reference to the object where THIS is used (the object depends on the immediate contect)
+//        person.name = this.name
+
+// this will not work with arrow function (lexical scoping)
+// console.log(this); // it'a a window object
+// console.log(this.location.host)
+
+// const person1 = {
+//     firstName: "Havana",
+//     favFood: "taco",
+//     sayHi: function () {console.log(`Hello my name is ${this.firstName}`)} ,
+//     sayFavFood: function () {console.log(`${this.firstName} love to eat ${this.favFood}`)}
+// }
+
+// person1.sayHi();
+// person1.sayFavFood();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
