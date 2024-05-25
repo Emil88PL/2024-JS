@@ -1356,3 +1356,39 @@
 
 
 
+
+// object = A collection or related properties and/or methods 
+//          Can represent real world objects (people, products, places)
+//          object = {key:value,
+//                    function()} (methods)
+
+
+// const person1 = {
+//     firstName: "James",
+//     lastName: "Bond",
+//     age: 76,
+//     isEmployed: true,
+//     sayHello: () => console.log("Hi I am agent 007!"), // arrow function
+//     sayBay: function () { console.log("GoodBay!") }, // function expression
+//     eat: () => console.log("I am eating chicken!!")
+// };
+
+// const person2 = {
+//     firstName: "Ethan",
+//     lastName: "Carter",
+//     age: 43,
+//     isEmployed: false,
+//     sayHello: () => console.log("Hi I am Vanished!"),
+//     sayBay: () => console.log("GoodBay!")
+// }
+
+// console.log(person1.firstName);
+// console.log(person1.isEmployed);
+// person1.sayHello();
+// person1.eat();
+// setTimeout(person1.sayBay, 1000)
+
+
+// console.log(person2.firstName);
+// person2.sayHello();
+// setTimeout(person2.sayBay, 3000);
