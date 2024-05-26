@@ -2172,12 +2172,86 @@
 // }
 
 
+// Closure = A function defined inside of another function,
+//           the inner function has access to the variables and
+//           scope of the outer function.
+//           Allow for private variables and state maintenance
+//           Used frequently in JS frameworks: React, Vue, Angular
+
+// ex 1
+// function outer() {
+
+//     let number = "Hello";
+
+//     function inner() {
+//         console.log(`Message: ${number}`);
+//     }
+
+//     inner();
+// }
+// // you can encapsulate variable and make them private
+// outer();
+
+// // ex 2
 
 
+// function createCounter() {
+    
+//     let count = 0;
 
+//     function increment() {
 
+//         count++;
+//         console.log(`Count increased to ${count}`);
+//     }
 
+//     function getCount() {
+//         return count;
+//     }
+//     // increment and it asosiate value will be reference to the increment
+//     // return {increament:increment }
+//     return {increment, getCount};
+// }
 
+// const counter = createCounter();
+
+// counter.increment();
+// counter.increment();
+// counter.increment();
+// console.log(counter.getCount());
+
+// // ex 3
+
+// function createGame() {
+
+//     let score = 0;
+    
+//     function increaseScore(points) {
+    
+//         score += points;
+//         console.log(`+ ${points}pts`)
+//     }
+    
+//     function decreaseScore(points) {
+    
+//         score -= points;
+//         console.log(`- ${points}pts`)
+//     }
+    
+//     function getScore() {
+    
+//         return score;
+//     }
+
+//     return {increaseScore, decreaseScore, getScore};
+// }
+
+// const theGame = createGame();
+
+// theGame.increaseScore(2);
+// theGame.increaseScore(2);
+// theGame.decreaseScore(1);
+// console.log(`${theGame.getScore()}pts total`);
 
 
 
