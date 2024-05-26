@@ -2369,6 +2369,22 @@
 //     display.textContent = `${hours}:${minutes}:${seconds}:${miliseconds}`
 // }
 
+// ES6 Module = An external file that contains reusable code
+//              that can be imported into other JavaScript files.
+//              Write reusable code for many different apps.
+//              Can contain variables, classesm functions ... and more
+//              Introduced as part of ECMAScript 2015 update
+
+//              add typr="module" to <script> tag
+
+// import {PI, getCircumference, getArea, getVolume} from './math.util.js';
+
+// console.log(PI);
+// console.log(getArea(2));
+// const area = getArea(10);
+// console.log(`Area: ${area.toFixed(2)} cm`);
+// console.log(getCircumference(2));
+// console.log(getVolume(3));
 
 
 
