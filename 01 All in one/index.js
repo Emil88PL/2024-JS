@@ -2057,13 +2057,65 @@
 // console.log(minCal);
 
 
+// sort() = method used to sort elements of an array in place.
+//          Sort elements as strings in lexicographic order, not 
+//          alphabetical 
+//          lexicographic = (alphabet + numbers + symbols) as strings
 
 
+// let fruits = ["apple", "oragne", "banana", "coconut", "pineapple"];
+// fruits.sort();
+// console.log(fruits);
 
 
+// let numbers = [1, 10, 4, 6, 3, 2, 8, 7, 5];
+// // not by numbers - lexicographicly
+// numbers.sort();
+// console.log(numbers);
+// // to sort by numbers
+// numbers.sort((a, b) => a - b);
+// console.log(numbers);
+// // to sort in reverse order
+// numbers.sort((a, b) => b - a);
+// console.log(numbers);
 
 
+// const people = [{name: "Bond", age: 84, gpa: 3.0}, 
+//                 {name: "Bruce", age: 44, gpa: 1.5}, 
+//                 {name: "Wally", age: 72, gpa: 2.5}, 
+//                 {name: "Alice", age: 111, gpa: 4.0}];
 
+// // sort by age ascending
+// people.sort((a, b) => a.age - b.age );
+
+// console.log(people);
+
+// for(const person in people) {
+//     console.log(people[person].age);
+// }
+// // sort by age descending
+// people.sort((a, b) => b.age - a.age );
+
+// for(const person in people) {
+//     console.log(people[person].age);
+// }
+
+// people.sort((a, b) => a.gpa - b.gpa);
+// for(person in people) {
+//     console.log(`- ${people[person].gpa}`)
+// }
+
+// // ------- localeCompare()------------
+// // for lexicographic order
+// people.sort((a, b) => a.name.localeCompare(b.name));
+// for(const person in people) {
+//     console.log(`Name: ${people[person].name}`);
+// }
+// // for reverse lexicographic order
+// people.sort((a, b) => b.name.localeCompare(a.name));
+// for(const person in people) {
+//     console.log(`R Name: ${people[person].name}`);
+// }
 
 
 
