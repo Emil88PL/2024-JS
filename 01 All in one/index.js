@@ -2133,6 +2133,97 @@
 //     }
 // }
 
+// Data objects = Objects that contain values that represent dates
+//                and times Those data objects can be changed and
+//                formatted
+
+// Date(year, month, day, hour, minute, second, ms);
+// const date = new Date();
+// const date2 = new Date(2024, 4, 26, 9, 29, 45, 2);
+// const date3 = new Date("2024-05-26T09:29:45.02Z");
+// const date4 = new Date(1716712492634);
+
+// console.log(`Current Time: ${date}`);
+// console.log(`One way to set up time: ${date2}`);
+// console.log(`Second way to set up time ${date3}`);
+// console.log(`Epoch way to set up the time ${date4}`);
+
+
+// const year = date.getFullYear();
+// const month = date.getMonth();
+// const day = date.getDate();
+// const hour = date.getHours();
+// const min = date.getMinutes();
+// const dayOfTheWeek = date.getDay(); // Sunday is 0
+// console.log(year);
+// console.log(month);
+// console.log(day);
+// console.log(hour);
+// console.log(min);
+// console.log(dayOfTheWeek);
+// // set year...
+// date.setFullYear(1965);
+// console.log(date);
+// // compare
+// const date01 = new Date("2023-12-31");
+// const date02 = new Date("2024-01-01");
+// if(date02 > date01) {
+//     console.log("Happy New Year!");
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
