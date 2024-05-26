@@ -2254,20 +2254,46 @@
 // console.log(`${theGame.getScore()}pts total`);
 
 
+// setTimeout() = function in JavaScript that allows you to schedule 
+//                the execution of a function after an amount of 
+//                time (mmiliseconds) 
+//                Times are approximate (varies based on the
+//                worklead of the JavaScript runtime env.)
+
+//                setTimeout(callback, delay);
+//                clearTimeout(timeoutId) = we can cancel timeout  before it triggers
 
 
+// function sayHello() {
+//     window.alert("Hello!");
+//     // window.confirm("Hello!");
+// }
 
+// setTimeout(sayHello, 3000);
 
+// anonymous function
+// setTimeout(function() {window.alert("Helloo!")}, 1000);
 
+// arrow funciton
+// setTimeout(() => {window.alert("Hello!");}, 1000);
 
+// clearTimeout - cancel a timeout before it triggers
+// const timeoutId = setTimeout(() => {window.alert("Hello!");}, 1000);
+// clearTimeout(timeoutId);
 
+// ex
+// let timeOut;
 
+// function sayBtnHello() {
+//     timeOut = setTimeout(() => {
+//         window.alert("Hello! from Button");}, 2000);
+//     console.log("Hello button");
+// }
 
-
-
-
-
-
+// function sayBtnCancelHello() {
+//     clearTimeout(timeOut);
+//     console.log("Cancel button");
+// }
 
 
 
