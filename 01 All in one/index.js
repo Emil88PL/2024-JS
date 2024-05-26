@@ -2508,34 +2508,69 @@
 
 
 
+// Element selectors = Methods used to target and manipulate HTML elemtnts
+//                     They allow you to select one or mutliple 
+//                     HTML elements from the DOM
+
+// 1. dodument.getElementById()       // Element or NULL
+// 2. dodument.getElementsClassName() // HTML Collection - We can type cast them to Array
+// 3. dodument.getELementsByTagName() // HTML Collection - We can type cast them to Array
+// 4. dodument.querySelector()        // Element or NULL
+// 5. dodument.querySelectorAll()     // Nodelist
+
+// const myHeading = document.getElementById("myHeading");
+// // // myHeading.style.backgroundColor = "yellow";
+// // myHeading.style.textAlign = "center";
+// // console.log(myHeading);
 
 
+// const fruits = document.getElementsByClassName("fruits");
+// console.log(fruits);
+// fruits[0].style.backgroundColor = "yellow";
+
+// // HTML collections dosen't have forEach method
+// for(let fruit of fruits) {
+//     fruit.style.backgroundColor = "red";
+// }
+
+// // typr cast to array
+// Array.from(fruits).forEach(fruit => 
+//     fruit.style.backgroundColor = "yellow");
+
+// const h4Elements = document.getElementsByTagName("h4");
+// console.log(h4Elements);
+// h4Elements[0].style.backgroundColor = "yellow";
+// for(let elemnt of h4Elements) {
+//     elemnt.style.backgroundColor = "red";
+// }
+
+// Array.from(h4Elements).forEach(x => x.style.backgroundColor = "green");
+
+// const liElements = document.getElementsByTagName("li");
+// console.log(liElements);
+// liElements[0].style.backgroundColor = "blue";
+
+// for(let li of liElements) {
+//     li.style.backgroundColor = "purple";
+// }
+
+// Array.from(liElements).forEach(l => l.style.backgroundColor = "lightgreen");
 
 
+// const element = document.querySelector(".fruits");
+// const element1 = document.querySelector("h4");
 
 
+// element.style.backgroundColor = "red";
+// element1.style.backgroundColor = "aqua";
 
+// const nodeList = document.querySelectorAll(".fruits");
+// nodeList[1].style.backgroundColor = "aqua";
+// const foods = document.querySelectorAll("li");
+// foods[5].style.backgroundColor = "aqua";
+// console.log(foods);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+// foods.forEach(food => food.style.backgroundColor = "aqua");
 
 
 
