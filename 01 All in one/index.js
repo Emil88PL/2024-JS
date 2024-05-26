@@ -2415,6 +2415,103 @@
 // func1(func2);
 
 
+// Error = An Object that is created to represenet a poblem that occurs
+//         Occur often with user input or establishing a connection
+
+//         Network Errors
+//         Promise rejection
+//         Security Errors
+
+// try {} = Encloses code that might potentially cause an error
+// catch {} = Catch and handle any thown Errors from try {}
+// finally {} = (optional) Always executes. Used mostly for clean up
+//              ex. close files, close connections, release resoursces
+// try {
+//     console.log(x);
+//     // Network Errors
+//     // Promise rejection
+//     // Security Errors
+// } catch (error) {
+//     console.error(`Something went wrong : ${error}`);
+// } finally {
+//     // Close files
+//     // Close connections
+//     // Release resources
+//     console.log("Always executes")
+// }
+
+// console.log("End of the program");
+
+// try {
+//     const dividend = Number(window.prompt("Enter a dividend: "));
+//     const divisor = Number(window.prompt("Enter a divisor: "));
+
+//     if(divisor == 0) {
+//         throw new Error("Can't divide by 0!");
+//     }
+//     if(isNaN(dividend) || isNaN(divisor)) {
+//         throw new Error("Values must be a number");
+//     }
+
+//     const result = dividend / divisor;
+//     console.log(result);
+// } catch(error) {
+//     console.error(error);
+// }
+
+// console.log("End");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
