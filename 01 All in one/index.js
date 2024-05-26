@@ -2484,14 +2484,27 @@
 // }
 
 
+// DOM = Document Object Model
+//       Object {} that represents the page you see in the web browser
+//       and provides you with an API to interact with it. 
+//       Web browser constructs the DOM when it leads an HTML document,
+//       and sttuctures all the elements in a tree-like representation.
+//       JavaScript can assess DOM to dynamically change the content,
+//       structure, and style of a web page
 
 
 
+// document.getElementById("");
+// console.log(document);
+// console.dir(document);
+// console.dir(document.title="Document title!");
 
+// document.body.style.backgroundColor = "blue";
 
+// const userName = "";
+// const welcomeMessage = document.getElementById("welcome-msg");
 
-
-
+// welcomeMessage.textContent += userName === "" ? "Guest" : userName;
 
 
 
