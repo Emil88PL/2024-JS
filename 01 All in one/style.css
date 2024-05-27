@@ -6,32 +6,10 @@ body {
     text-align: center;
 }
 
-#myBox{
-    background-color: lightgreen;
-    width: 200px;
-    height: 200px;
-    font-size: 9.1rem;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-    position: relative;
-    padding-bottom: 22px;
-}
-
-#myButton {
+.buttons {
     font-size: 3rem;
     border: none;
-    margin: 2px;
-    
+    margin: 7px;
+    background-color: hsla(160, 100%, 75%, 0.473);
+    border-radius: 4px;
 }
-
-#myButton:hover {
-    background-color: aqua;
-    font-size: 3rem;
-    border: none;
-    margin: 2px;
-
-}
-

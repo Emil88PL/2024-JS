@@ -2841,21 +2841,63 @@
 //     }
 // })
 
+// NodeList = Static collection of HTML elements by (id, class, element) 
+//            Can be created by using querySelectAll() 
+//            Similar to an array, but no (map, filter, reduce) they have forEach
+//            NodeList won't update to automatically reflect changes
 
 
+// let buttons = document.querySelectorAll(".buttons");
 
+// console.log(buttons)
+// Add HTML/CSS Properties
 
+// buttons.forEach(button => {
+//     button.style.backgroundColor = "lightgreen";
+//     button.textContent += "😃" ;
+// })
 
+// CLICK event listener
 
+// buttons.forEach(b => {
+//     b.addEventListener("click", e => {
+//         e.target.style.backgroundColor = "tomato";
+//     })
+// })
 
+// Mouseover + mouseout event listener 
 
+// buttons.forEach(b =>{
+//     b.addEventListener("mouseover", e => {
+//         e.target.style.backgroundColor = "blue";
+//     })
+// })
 
+// buttons.forEach(b =>{
+//     b.addEventListener("mouseout", e => {
+//         e.target.style.backgroundColor = "green";
+//     })
+// })
 
-
-
-
-
-
+// // Add an element
+// // Step 1
+// const newButton = document.createElement("button");
+// // Step 2 
+// newButton.textContent = "Button 5"
+// newButton.classList = "buttons";
+// // Setp 3
+// document.body.appendChild(newButton);
+// console.log(buttons);
+// buttons = document.querySelectorAll(".buttons");
+// console.log(buttons);
+// // Remove an element
+// buttons.forEach(button => {
+//     button.addEventListener("click", event =>{
+//         event.target.remove();
+//         buttons = document.querySelectorAll(".buttons");
+//         console.log(buttons);
+//     })
+// })
 
 
 
