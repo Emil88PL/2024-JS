@@ -2669,33 +2669,75 @@
 // children[2].style.backgroundColor = "blue";
 
 
+// ex 1 <h1>--------------------------------------------
 
+// Step 1 - Create the element
+// Step 2 - Add attributes/properties
+// Step 3 - Append element to DOM
+// Remove HTML element
 
+// Step 1 - Create the element
+// const newH1 = document.createElement("h1");
 
+// Step 2 - Add attributes/properties
+// newH1.textContent = "I like pizza";
+// newH1.id = "myH1";
+// newH1.style.color = "white";
+// newH1.style.textAlign = "center";
 
+// Step 3 - Append element to DOM
+// document.body.append(newH1);
+// document.body.prepend(newH1);
+// document.getElementById("box1").prepend(newH1);
+// document.getElementById("box1").append(newH1);
+// document.getElementById("box2").append(newH1);
 
+// Putting h1 element before box2
+// const box2 = document.getElementById("box2");
+//                // newELement, currentElement
+// document.body.insertBefore(newH1, box2);
 
+// Putting h1 element before box4
+// const box4 = document.getElementById("box4");
+//                // newELement, currentElement
+// document.body.insertBefore(newH1, box4);
 
+// if they don't have id
 
+// const boxes = document.querySelectorAll(".box");
+// document.body.insertBefore(newH1, boxes[0])
+// document.body.insertBefore(newH1, boxes[1])
+// document.body.insertBefore(newH1, boxes[2])
 
+// Remove HTML element
+// document.body.removeChild(newH1);
+// document.getElementById("box1").removeChild(newH1);
 
+// ex 2 <ol> -------------------------------------------
 
+// Step 1 - Create the element
+// const newListItem = document.createElement("li");
 
+// Step 2 - Add attributes/properties
+// newListItem.textContent = "Coconut";
+// newListItem.id = "coconut";
 
+// Step 3 - Append element to DOM
+// document.getElementById("fruits").appendChild(newListItem);
+// document.getElementById("fruits").append(newListItem);
+// document.getElementById("fruits").prepend(newListItem);
 
+// Before Orange
+// const orange = document.getElementById("orange");
+// document.getElementById("fruits").insertBefore(newListItem, orange);
 
+// if items dosen't have id
 
+// const olList = document.querySelectorAll("#fruits li");
+// document.getElementById("fruits").insertBefore(newListItem, olList[2]);
 
-
-
-
-
-
-
-
-
-
-
+// Remove HTML element
+// document.getElementById("fruits").removeChild(newListItem);
 
 
 
