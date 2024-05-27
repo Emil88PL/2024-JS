@@ -2573,6 +2573,125 @@
 // foods.forEach(food => food.style.backgroundColor = "aqua");
 
 
+// DOM Navigation = The proces of navigating through the structure
+//                  of an HTML document using JavaScript
+
+// .firstElementChild
+// .lastElementChild
+// .nextElementSibling
+// .previousElementSibling
+// .parenElement
+// .children  // HTML Collection - need to type cast to Array.from(id)
+
+
+
+// .firstElemenrChild -------------------------------
+
+// const elementFruits = document.getElementById("fruits");
+// const firstELementF = elementFruits.firstElementChild;
+// firstELementF.style.background = "yellow";
+
+// const elementVegetables = document.getElementById("vegetables");
+// const firstELementV = elementVegetables.firstElementChild;
+// firstELementV.style.background = "yellow";
+
+// const elementDesserts = document.getElementById("desserts");
+// const firstELementD = elementDesserts.firstElementChild;
+// firstELementD.style.background = "yellow";
+
+
+// const ulElements = document.querySelectorAll("ul");
+// ulElements.forEach(ulElemnt => {
+//     const firstChild = ulElemnt.firstElementChild;
+//     firstChild.style.backgroundColor = "green";
+// })
+
+// .lastElementChild ----------------------------------
+
+// const lastChild = elementFruits.lastElementChild;
+// lastChild.style.backgroundColor = "red";
+
+// const allLastElements = document.querySelectorAll("ul");
+// allLastElements.forEach(element => {
+//     const lastChild = element.lastElementChild;
+//     lastChild.style.backgroundColor = "red";
+// })
+
+// .nextElementSibling ---------------------------------
+// need add id to all ul
+
+// const element = document.getElementById("Beets");
+// const nextSibling = element.nextElementSibling;
+// nextSibling.style.backgroundColor = "green";
+
+// const elementUl = document.getElementById("fruits");
+// const nextSibling1 = elementUl.nextElementSibling;
+// nextSibling1.style.backgroundColor = "green";
+
+
+// .previousElementSibling -----------------------------
+
+
+// const element = document.getElementById("Carrots");
+// const nextSibling = element.previousElementSibling;
+// nextSibling.style.backgroundColor = "green";
+
+
+
+// const elementUl = document.getElementById("desserts");
+// const nextSibling1 = elementUl.previousElementSibling;
+// nextSibling1.style.backgroundColor = "green";
+
+
+// .parentElement --------------------------------------
+
+// const elementF = document.getElementById("Carrots");
+// const nextSibling1 = elementF.parentElement;
+// nextSibling1.style.backgroundColor = "green";
+
+// const elementV = document.getElementById("Celery");
+// const nextSibling2 = elementV.parentElement;
+// nextSibling2.style.backgroundColor = "blue";
+
+// const elementD = document.getElementById("Ice cream");
+// const nextSibling3 = elementD.parentElement;
+// nextSibling3.style.backgroundColor = "purple";
+
+// .children ------------------------------------------
+
+// HTML Collection need to cast to Array.from(id).forEach()
+// const element = document.getElementById("fruits");
+// const children = element.children;
+// Array.from(children).forEach(element => {
+//     element.style.backgroundColor = "red";
+// });
+
+// children[2].style.backgroundColor = "blue";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
