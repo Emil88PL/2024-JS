@@ -5,11 +5,37 @@ body {
     /* 2em means 200% */
     text-align: center;
 }
+#myH1 {
+    font-size: 2.5rem;
+}
 
-.buttons {
+#myButton {
     font-size: 3rem;
     border: none;
     margin: 7px;
-    background-color: hsla(160, 100%, 75%, 0.473);
+    background-color: hsla(160, 46%, 54%, 0.473);
     border-radius: 4px;
+}
+
+.myButtons {
+    font-size: 3rem;
+    border: none;
+    margin: 7px;
+    background-color: hsla(160, 46%, 54%, 0.473);
+    border-radius: 4px;
+}
+
+.enabled {
+    background-color: rgb(22, 22, 189);
+    color: white;
+}
+
+.hover {
+    box-shadow: 0 0 10px black;
+    font-weight: bold;
+}
+
+.disabled {
+    background-color: hsl(0, 0, 60%);
+    color: grey;
 }

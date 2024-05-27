@@ -2900,11 +2900,103 @@
 // })
 
 
+// classList = Element property is JavaScript used to interact
+//             with an element's list of classes(CSS classes)
+//             Allows you to make reusable classes for many elements
+//             across your webpage
 
+//             add()
+//             remove()
+//             toggle(Remove if present, Add if not)
+//             replace(oldClass, newClass)
+//             contains()
 
+// ex 1
+// const myButton = document.getElementById("myButton");
 
+// myButton.classList.add("enabled");
+// myButton.classList.remove("enabled")
+// // add remove
+// myButton.addEventListener("mouseover", element=> {
+//     element.target.classList.add("hover");
+//     element.target.style.color = "white";
+// })
 
+// myButton.addEventListener("mouseout", element=> {
+//     element.target.classList.remove("hover");
+//     element.target.style.color = "black";
+// })
 
+// // toggle
+// myButton.addEventListener("mouseover", element=> {
+//     element.target.classList.toggle("hover");
+//     element.target.style.color = "white";
+// })
+
+// myButton.addEventListener("mouseout", element=> {
+//     element.target.classList.toggle("hover");
+//     element.target.style.color = "black";
+// })
+// ex 2
+// // replace
+// myButton.classList.add("enabled");
+
+// myButton.addEventListener("click", event => {
+
+//     if(event.target.classList.contains("disabled")) {
+//         event.target.textContent += "😆";
+//         console.log("click");
+//     } else {
+//         event.target.classList.replace("enabled", "disabled");
+//     }
+// });
+
+// const myH1 = document.getElementById("myH1");
+// myH1.classList.add("enabled");
+
+// myH1.addEventListener("click", event => {
+
+//     if(event.target.classList.contains("disabled")) {
+//         event.target.textContent += "😆";
+//         console.log("click");
+//     } else {
+//         event.target.classList.replace("enabled", "disabled");
+//     }
+// });
+
+// ex 3
+
+// let buttons = document.querySelectorAll(".myButtons");
+// buttons.forEach(button =>{
+//     button.classList.add("enabled");
+// });
+
+// buttons.forEach(button =>{
+//     button.classList.remove("enabled");
+// });
+
+// buttons.forEach(button => {
+//     button.addEventListener("mouseover", element => {
+//         element.target.classList.toggle("hover");
+//     })
+// });
+
+// buttons.forEach(button => {
+//     button.addEventListener("mouseout", element => {
+//         element.target.classList.toggle("hover");
+//     })
+// });
+
+// buttons.forEach(button => {
+//     button.addEventListener("click", element => {
+
+//         if(element.target.classList.contains("disabled")) {
+//             element.target.textContent += "👌";
+//         } else {
+//             element.target.classList.replace("enabled", "disabled");
+//         }
+//     })
+// });
 
 
 
