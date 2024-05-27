@@ -2823,7 +2823,23 @@
 // })
 
 
+// Show and hide HTML elements 
 
+
+// const myBtn = document.getElementById("myButton");
+// const myImg = document.getElementById("myImg");
+
+// myBtn.addEventListener("click", e =>{
+
+//     if(myImg.style.visibility === "hidden") {
+//         myImg.style.visibility = "visible";
+//         myBtn.textContent = "Hide";
+
+//     } else {
+//         myImg.style.visibility = "hidden";
+//         myBtn.textContent = "Show";
+//     }
+// })
 
 
 
