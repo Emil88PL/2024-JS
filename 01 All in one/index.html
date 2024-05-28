@@ -8,19 +8,10 @@
 </head>
 <body>
 
-    <div class="slider">
-        <div class="slides">
-            <img class="slide" src="utils/images/1.png" alt="Cube1">
-            <img class="slide" src="utils/images/2.png" alt="Cube2">
-            <img class="slide" src="utils/images/3.png" alt="Cube3">
-            <img class="slide" src="utils/images/4.png" alt="Cube4">
-            <img class="slide" src="utils/images/5.png" alt="Cube5">
-            <img class="slide" src="utils/images/6.png" alt="Cube6">
-        </div>
-        <button class="prev" onclick="prevSlide()">&#10094</button>
-        <button class="next" onclick="nextSlide()">&#10095</button>
-    </div>
-
+    
+    <input type="text" id="pokemonName" placeholder="Enter pokemon name">
+    <button onclick="fetchData()">GO!</button><br>
+    <img id="pokemonSprite" src="" alt="X" style="display: none">
 
 
     <script src="index.js"></script>
