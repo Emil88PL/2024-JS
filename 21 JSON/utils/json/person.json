@@ -1,0 +1,6 @@
+{
+    "name": "Kathleen Booth",
+    "age" : 100,
+    "isAlive": false,
+    "hobbies": ["assembly", "computer scientist"]
+ }

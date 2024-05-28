@@ -1,0 +1,21 @@
+[{
+    "name": "Kathleen Booth",
+    "age": 100,
+    "isAlive": false
+    
+},
+{
+    "name": "Dennis Ritchie",
+    "age": 70,
+    "isAlive": false
+},
+{
+    "name": "Ada Lovelace",
+    "age": 36,
+    "isAlive": false
+},
+{
+    "name": "James Gosling",
+    "age": 69,
+    "isAlive": true
+}]
