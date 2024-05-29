@@ -3610,7 +3610,20 @@
 
 
 
+// assert in function
+// function assert(condition, message) {
+//     if (!condition) {
+//         throw new Error(message || "Assertion failed");
+//     }
+// }
 
+// function divide(a, b) {
+//     assert(b !== 0, "Division by zero");
+//     return a / b;
+// }
+
+// console.log(divide(10, 2)); // 5
+// console.log(divide(10, 0)); // Error: Division by zero
 
 
 
