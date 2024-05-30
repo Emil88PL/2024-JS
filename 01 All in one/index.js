@@ -3670,15 +3670,17 @@
 
 
 
-
+// console.assert
+//  this acts more like console.error in that the code continues to execute
 // function seyHello(name) {
-//     console.assert(typeof name === "string" && name.length < 1);
+//     console.assert(typeof name === "string", "Have to be String");
+//     console.assert(name.length > 1, "Can't be shorter then 1 character");
 //     console.log(`Hello ${name}`);
 // }
 
-// seyHello("M");
-// seyHello(1);
-// seyHello();
+// seyHello("Message");
+// seyHello("12");
+
 
 
 
