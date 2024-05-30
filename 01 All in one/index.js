@@ -3627,18 +3627,58 @@
 
 
 
+// // a'la parallel
+// function fun1() {
+//     let i = 0;
+//     function log() {
+//         if (i <= 1000) {
+//             console.log(`Task 1: ${i}`);
+//             i++;
+//             setTimeout(log, 0); // Schedule the next log operation
+//         }
+//     }
+//     log();
+// }
+
+// function fun2() {
+//     let i = 0;
+//     function log() {
+//         if (i <= 1000) {
+//             console.log(`Task 2: ${i}`);
+//             i++;
+//             setTimeout(log, 0); // Schedule the next log operation
+//         }
+//     }
+//     log();
+// }
+
+// async function runInParallel() {
+//     const task1 = new Promise((resolve) => {
+//         fun1();
+//         resolve();
+//     });
+
+//     const task2 = new Promise((resolve) => {
+//         fun2();
+//         resolve();
+//     });
+
+//     await Promise.all([task1, task2]);
+// }
+
+// runInParallel();
 
 
 
 
+// function seyHello(name) {
+//     console.assert(typeof name === "string" && name.length < 1);
+//     console.log(`Hello ${name}`);
+// }
 
-
-
-
-
-
-
-
+// seyHello("M");
+// seyHello(1);
+// seyHello();
 
 
 
